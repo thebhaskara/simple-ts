@@ -1,0 +1,39 @@
+{
+  "name": "simple-ts",
+  "version": "1.0.0",
+  "description": "Trying to publish simple typescript pieces of code",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require ts-node/register 'test/**/*.ts'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.3.19",
+    "@types/jest": "^29.5.13",
+    "chai": "^5.1.1",
+    "mocha": "^10.7.3",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
